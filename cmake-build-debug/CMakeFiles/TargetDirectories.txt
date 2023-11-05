@@ -1,0 +1,3 @@
+C:/Users/mamon/CLionProjects/PixelWork/cmake-build-debug/CMakeFiles/PixelWork.dir
+C:/Users/mamon/CLionProjects/PixelWork/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mamon/CLionProjects/PixelWork/cmake-build-debug/CMakeFiles/rebuild_cache.dir
