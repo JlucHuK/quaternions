@@ -9,9 +9,9 @@ int main() {
         vector_1.z = -0.955545440155588;
 
     struct Vector vector_12; //p2
-    vector_12.x = 0.939149897210863;
-    vector_12.y = 0.304787228229243;
-    vector_12.z = 0.158436788900688;
+        vector_12.x = 0.939149897210863;
+        vector_12.y = 0.304787228229243;
+        vector_12.z = 0.158436788900688;
 
 
     struct Vector vector_2; //r1
@@ -29,7 +29,7 @@ int main() {
 
 
     //Find the Yi between of our vectors
-    long double Yi = acosl((vector_2.x * vector_1.x) + (vector_2.y * vector_1.y) + (vector_2.z * vector_1.z));
+        long double Yi = acosl((vector_2.x * vector_1.x) + (vector_2.y * vector_1.y) + (vector_2.z * vector_1.z));
 
 
     //Some MAGIC!
@@ -106,11 +106,16 @@ int main() {
     rotation_matrix[2][0] = 2 * (quaternion.q1 * quaternion.q3 - quaternion.q0 * quaternion.q2);
     rotation_matrix[2][1] = 2 * (quaternion.q0 * quaternion.q1 + quaternion.q2 * quaternion.q3);
     rotation_matrix[2][2] = (powl(quaternion.q0, 2) - powl(quaternion.q1, 2) - powl(quaternion.q2, 2) + powl(quaternion.q3, 2));
+    //------------------------------------------------//
+    
+    //Find our angles!
     long double Thee = asinl(rotation_matrix[0][1]);
     long double Psi = acosl(rotation_matrix[0][0]/cosl(Thee));
     long double Gamma = acosl(rotation_matrix[1][1]/cosl(Thee));
     printf("\nThee:%Lf Psi:%Lf Gamma:%Lf", ((Thee * 180)/M_PI), ((Psi * 180)/M_PI), ((Gamma * 180)/M_PI));
-    clock_t end = clock();
+
+    
+    clock_t end = clock(); //Time of work our programm (0.003 - 0.008)s
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
     printf("\ntime:< %lf >", time_spent);
     return 0;
