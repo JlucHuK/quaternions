@@ -1,2 +1,1 @@
-Данный код является частью большого алгоритма, который на данный момент находится в разработке. Этот код находит кватернион поворота математическим способом от одной пары векторов к другой. Точность данного алгоритма зависит от long double.
-Название кода никак не связана с его работой. Ввод данных на данный момент производится руками в главной функции.
+This code is part of a larger algorithm that is currently under development. This code finds the rotation quaternion mathematically from one pair of vectors to another. The accuracy of this algorithm depends on long double. The name of the code has nothing to do with how it works. Data entry is currently done manually in the main function.
